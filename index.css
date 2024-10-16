@@ -1,0 +1,12 @@
+body {
+  background-color: bisque;
+}
+main {
+  display: flex;
+  height: 25rem;
+  justify-content: center;
+}
+.left {
+  background-color: hsl(241, 81%, 54%);
+  border-radius: 4%;
+}
