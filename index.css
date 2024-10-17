@@ -1,12 +1,195 @@
+@import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap");
 body {
-  background-color: bisque;
+  background-color: azure;
+  font-size: 18px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  justify-content: center;
+  font-family: "Lora", serif;
+  font-optical-sizing: auto;
 }
 main {
   display: flex;
-  height: 25rem;
+  height: fit-content;
   justify-content: center;
+  height: fit-content;
+  border-radius: 20px;
+  background-color: white;
+  width: fit-content;
 }
 .left {
   background-color: hsl(241, 81%, 54%);
-  border-radius: 4%;
+  border-radius: 20px;
+  width: 20rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding-bottom: 20px;
+}
+
+.right {
+  width: 20rem;
+  display: flex;
+  flex-direction: column;
+  padding: 0px 40px 20px 40px;
+  height: fit-content;
+  background-color: white;
+  gap: 10px;
+}
+
+.scores {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.scores div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.Reaction {
+  background-color: #fff6f5;
+  border-radius: 15px;
+}
+
+.Reaction > *:first-child {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: hsl(0, 100%, 67%);
+}
+
+.Reaction > *:last-child {
+  display: flex;
+  align-items: center;
+}
+
+.memory {
+  background-color: #fffbf2;
+  border-radius: 15px;
+}
+
+.memory > *:first-child {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: hsl(39, 100%, 56%);
+}
+
+.memory > *:last-child {
+  display: flex;
+  align-items: center;
+}
+
+.Verbal {
+  background-color: #f2fbfa;
+  border-radius: 15px;
+}
+
+.Verbal > *:first-child {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: hsl(166, 100%, 37%);
+}
+
+.Verbal > *:last-child {
+  display: flex;
+  align-items: center;
+}
+
+.Visual {
+  background-color: #f3f3fd;
+  border-radius: 15px;
+}
+.Visual > *:first-child {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: hsl(234, 85%, 45%);
+}
+
+.Visual > *:last-child {
+  display: flex;
+  align-items: center;
+}
+
+#result {
+  color: white;
+  opacity: 0.7;
+}
+
+.left-score {
+  background: linear-gradient(
+    to bottom,
+    hsla(256, 72%, 46%, 1),
+    hsla(241, 72%, 46%, 0)
+  );
+  border-radius: 50%;
+  height: 10rem;
+  width: 10rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.left-score > h1 {
+  font-size: 3.5rem;
+  color: white;
+  margin: 0;
+}
+
+.left-score > p {
+  color: white;
+  opacity: 0.7;
+  margin: 0;
+}
+.great {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 14rem;
+  gap: 15px;
+}
+
+.great > h3 {
+  color: white;
+  margin: 0;
+}
+.great > p {
+  color: white;
+  opacity: 0.5;
+  margin: 0;
+  text-align: center;
+}
+
+.faded-text {
+  color: #b7b1b7;
+  font-weight: bold;
+}
+
+.bold-text {
+  color: #2e2b3e;
+  font-weight: bold;
+}
+
+p {
+  margin: 0;
+}
+
+button {
+  background-color: #303b59;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  padding: 10px 20px;
+  cursor: pointer;
+  margin: 10px;
+  font-weight: bold;
 }
